@@ -17,7 +17,7 @@ ul li {
   overflow: hidden;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  font-size: large;
+  font-size: 2.5vw;
 }
 
 .i-html {
@@ -27,7 +27,7 @@ ul li {
   background-size: 55vw;
   background-repeat: no-repeat;
   background-position: 0%;
-  margin: 20px -20px 0px -8px;
+  margin: 0px -20px 0px -8px;
 
 }
 
@@ -38,7 +38,7 @@ ul li {
   background-size: 55vw;
   background-repeat: no-repeat;
   background-position: 50%;
-  margin: 20px 0px 30px -8px;
+  margin: 0px 0px 30px -8px;
 }
 
 .i-js {
@@ -48,6 +48,6 @@ ul li {
   background-size: 55vw;
   background-repeat: no-repeat;
   background-position: 100%;
-  margin: 20px 10px 30px -8px;
+  margin: 0px 10px 30px -8px;
 }
 

@@ -1,0 +1,99 @@
+/* Style the navigation menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  padding: 0;
+  ;
+}
+
+input {
+  display: none;
+}
+
+/* Style the toggle button */
+.menu-open-button {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  height: 40px;
+  margin-top: 1vw;
+  cursor: pointer;
+  padding-left: 2.3vw;
+  box-sizing: border-box;
+  border: solid 1px rgb(238, 44, 76);
+  border-radius: 50%;
+  background-color: rgb(238, 44, 76);
+  width: 7vw;
+  height: 7vw;
+}
+
+/* Style the toggle button lines */
+.menu-line {
+  width: 2.4vw;
+  height: 0.4vw;
+  background-color: white;
+  margin: 2px 0;
+  transition: all 0.3s ease;
+  border-radius: 1vw;
+}
+.menu-line-1 {
+  margin-top: 2.5vw;
+}
+
+.menu-open-button:hover {
+  transform: scale(1.1);
+}
+
+.menu .menu-open:checked ~ .menu-open-button {
+  transform: scale(0.55);
+  margin-bottom: -1.4vw;
+}
+
+/* Animate the toggle button lines when the menu is open */
+.menu-open:checked ~ .menu-open-button .menu-line-1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-2 {
+  opacity: 0;
+}
+
+.menu-open:checked ~ .menu-open-button .menu-line-3 {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+/* Style the menu items */
+.menu-item {
+  visibility: hidden;
+}
+
+/* Style the menu items when the menu is open */
+.menu-open:checked ~ .menu-item {
+  visibility: visible;
+  height: 40px;
+  width: 40px;
+  margin-top: 1vw;
+  margin-left: 1.5vw;
+  border: solid 1px rgb(238, 44, 76);
+  border-radius: 50%;
+  background-color: rgb(238, 44, 76);
+  color: white;
+}
+
+.menu-open:checked ~ .menu-item:hover {
+  border: solid 1px rgb(238, 44, 76);
+  background-color: white;
+  color: rgb(238, 44, 76);
+}
+
+.fa {
+  margin-left: 1vw;
+  margin-top: 1vw;
+}
+
+@keyframes slideDown {
+  0% {}
+
+}

@@ -6,7 +6,7 @@
 }
 
 .toggle {
-  margin-left: 2vw;
+  margin-left: 15px;
 }
 
 .toggle-cb {
@@ -21,15 +21,15 @@
 
 .toggle-inner {
   border: 1px solid grey;
-  width: 12vw;
-  height: 4.7vw;
+  width: 165px;
+  height: 55px;
   border-radius: 4vw;
 }
 
 .toggle-switch {
   border: 1px solid grey;
-  width: 5.5vw;
-  height: 5.5vw;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   position: relative;
   background-color: white;
@@ -45,11 +45,11 @@
 .toggle-cb ~ .toggle-label .toggle-inner::after{
   content: "No";
   color: rgb(177, 171, 171);
-  padding-left: 6vw;
+  padding-left: 112px;
 }
 
 .toggle-cb ~ .toggle-label .toggle-switch {
-  left: -14vw;
+  left: -175px;
   transition: left 0.15s ease;
 }
 
@@ -61,10 +61,10 @@
 .toggle-cb:checked ~ .toggle-label .toggle-inner::after {
   content: "Yes";
   color: white;
-  padding-left: 0.7rem;
+  padding-left: 12px;
 }
 
 .toggle-cb:checked ~ .toggle-label .toggle-switch {
-  left: -1.9rem;
+  left: -65px;
   transition: left 0.15s ease;
 }
